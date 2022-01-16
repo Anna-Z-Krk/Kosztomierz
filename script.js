@@ -6,7 +6,7 @@ const countError = document.querySelector('.error');
 const costInfo = document.querySelector(".cost-info");
 const cost = document.querySelector('.cost');
 const countTip = () => {
-    if (price.value <= 0 || price.value == '' || people.value <= 0 || people.value == '' || tip.value > 0) {
+    if (price.value <= 0 || price.value == '' || people.value <= 0 || people.value == '' || tip.value == 0) {
         countError.textContent = "Uzupełnij wszytkie pola."
         costInfo.style.display = 'none;';
     } else {
